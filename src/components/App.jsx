@@ -1,21 +1,26 @@
 //Exercise 1
+import React, { Component } from 'react';
+// import DisplayName from './DisplayName';
 
-import { returnStatement } from 'babel-types';
-import render from 'dom-serializer';
-import React, {Component} from 'react';
 
 class App extends Component {
     constructor(props) {
         super(props);
-        this.state = [
+        this.name = [
             {firstName: 'Reggie'},
             {lastName: 'White'}
         ]; 
+        // this.state = {
+        //     listNumber = 0
+        // };
     }
 
     render(){
         return(
-            <h1>this.state</h1>
+
+            <div>
+                <h1>{this.name[this.state.listNumber].firstName}</h1>
+            </div>
         )
     }
 
